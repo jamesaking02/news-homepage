@@ -7,16 +7,18 @@ const desktop = window.matchMedia("(width > 900px)")
 
 function openMenu() {
   overlay.classList.remove("closed")
+  nav.style.display = "block"
   nav.style.transform = "translateX(0%)"
-  nav.style.transition = "all .2s ease-in"
+  nav.style.animation = "slide-in .2s"
   menuButton.classList.add("opened")
   closeButton.style.transform = "translateY(0)"
-  closeButton.style.transition = "all .1s ease-in-out"
+  closeButton.style.transition = "all .05s ease-in-out"
   body.classList.add("fixed")
 }
 
 function closeMenu() {
   overlay.classList.add("closed")
+  nav.style.display = "none"
   nav.style.transform = "translateX(100%)"
   menuButton.classList.remove("opened")
   closeButton.style.transform = "translateY(-10vh)"

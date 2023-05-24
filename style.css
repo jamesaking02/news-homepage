@@ -76,7 +76,17 @@ img {
   filter: hue-rotate(0deg);
 }
 
+@keyframes slide-in {
+  from {
+    transform: translateX(100%)
+  }
+  to {
+    transform: translateX(0%)
+  }
+}
+
 .nav-list {
+  display: none;
   position: absolute;
   background-color: var(--off-white);
   padding: 1.5rem;
@@ -88,6 +98,7 @@ img {
 }
 
 .nav__items {
+  
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -263,6 +274,7 @@ body footer {
   }
 
   .nav-list {
+    display: block;
     position: unset;
     transform: translateX(0%);
     height: auto;
