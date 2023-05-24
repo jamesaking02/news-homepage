@@ -2,7 +2,7 @@ const menuButton = document.querySelector(".menu-button")
 const closeButton = document.querySelector(".close-button")
 const body = document.querySelector("body")
 const overlay = document.querySelector(".overlay")
-const nav = document.querySelector(".nav-absolute")
+const nav = document.querySelector(".nav-list")
 let menuOpen = false
 
 function openMenu() {
