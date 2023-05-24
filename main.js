@@ -27,6 +27,8 @@ function closeMenu() {
 function desktopNav() {
   if (desktop.matches) {
   nav.style.transform = "translateX(0%)"
+} else {
+  nav.style.transform = "translateX(100%)"
 }
 }
 
