@@ -17,6 +17,7 @@ html body {
   font-family: 'Inter', sans-serif;
   padding: 1rem;
   overflow-x: hidden;
+  background-color: var(--off-white);
 }
 
 .fixed {
@@ -126,7 +127,7 @@ li:is(:hover, :focus) {
 }
 
 .intro__heading {
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-size: clamp(2.5rem, 5vw, 4rem);
 }
 
 .intro__desc {
@@ -245,7 +246,7 @@ body footer {
 
 @media only screen and (width >= 900px) {
   html body {
-    max-width: 80rem;
+    max-width: 75rem;
     overflow-x: unset;
     margin: 0 auto;
   }
