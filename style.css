@@ -16,6 +16,7 @@ html body {
   font-size: 93.75%;
   font-family: 'Inter', sans-serif;
   padding: 1rem;
+  overflow-x: hidden;
 }
 
 .fixed {
@@ -27,6 +28,7 @@ html body {
   background-color: rgba(0, 0, 0, 0.5);
   inset: 0;
   height: 100dvh;
+  transition: all 1s ease-in;
 }
 
 button {
@@ -57,8 +59,25 @@ img {
   width: 13%;
 }
 
+.menu-button,
 .close-button {
+  cursor: pointer;
+}
+
+.close-button {
+  position: absolute;
+  right: .5rem;
+  transform: translateY(-10vh);
   z-index: 2;
+}
+
+.close-button:hover {
+  -webkit-filter: hue-rotate(0deg);
+  filter: hue-rotate(0deg);
+}
+
+nav {
+  overflow: hidden;
 }
 
 .nav-absolute {
@@ -69,6 +88,7 @@ img {
   top: 0;
   width: 14rem;
   height: 100dvh;
+  transform: translateX(100%);
 }
 
 div > ul {
