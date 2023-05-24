@@ -3,7 +3,7 @@ const closeButton = document.querySelector(".close-button")
 const body = document.querySelector("body")
 const overlay = document.querySelector(".overlay")
 const nav = document.querySelector(".nav-list")
-let menuOpen = false
+const desktop = window.matchMedia("(width > 900px)")
 
 function openMenu() {
   overlay.classList.remove("closed")
@@ -21,7 +21,17 @@ function closeMenu() {
   menuButton.classList.remove("opened")
   closeButton.style.transform = "translateY(-10vh)"
   body.classList.remove("fixed")
+  
 }
+
+function desktopNav() {
+  if (desktop.matches) {
+  nav.style.transform = "translateX(0%)"
+}
+}
+
+
 
 menuButton.addEventListener("click", openMenu)
 closeButton.addEventListener("click", closeMenu)
+desktop.addEventListener('change', desktopNav)
