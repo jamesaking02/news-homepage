@@ -29,6 +29,7 @@ function desktopNav() {
   nav.style.transform = "translateX(0%)"
 } else {
   nav.style.transform = "translateX(100%)"
+  nav.style.transition = "none"
 }
 }
 
