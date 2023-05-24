@@ -11,14 +11,13 @@
   
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    
   </style>
 </head>
 <body class="">
 <div class="overlay closed"></div>
 <header>
-  <div class="header--items">
+  <div class="header-items">
     <img src="./assets/images/logo.svg" alt="" class="logo">
     <button title="nav menu button" class="menu-button">
       <svg width="40" height="17" class="header__menu" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd">
@@ -31,9 +30,9 @@
       <img src="./assets/images/icon-menu-close.svg" alt="menu close" class="header__menu-close">
     </button>
   </div>
-  <nav class="">
-    <div class="nav-absolute">
-     <ul>
+  <nav>
+    <div class="nav-list">
+     <ul class="nav__items">
         <li>Home</li>
         <li>New</li>
         <li>Popular</li>
@@ -45,13 +44,17 @@
 </header>
 <main>
   <article class="intro">
-    <img src="./assets/images/image-web-3-mobile.jpg" alt="" class="intro__img">
+    <img src="./assets/images/image-web-3-mobile.jpg" alt="" class="intro__img--mobile">
+    <img src="./assets/images/image-web-3-desktop.jpg" alt="" class="intro__img--desktop">
     <h1 class="intro__heading">The Bright Future of Web 3.0?</h1>
-    <p class="intro__desc">
-      We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-      But is it really fulfilling its promise?
-    </p> 
-    <button class="intro__button">read more</button> 
+    <div>
+      <p class="intro__desc">
+        We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+        But is it really fulfilling its promise?
+      </p> 
+      <button class="intro__button">read more</button>  
+    </div>
+    
   </article>
   
   <section class="new">
@@ -112,7 +115,7 @@
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/jamesaking02" target="_blank">James King</a>.
     </div>
   </footer>
   <script src="./main.js"></script>
