@@ -225,7 +225,7 @@ hr {
 
 .article__desc {
   color: var(--dark-grayish-blue);
-  font-size: clamp(.9rem, 5vw, 1rem);
+  font-size: clamp(.9rem, 5vw, .95rem);
   line-height: 1.5;
 }
 
@@ -246,7 +246,7 @@ body footer {
 
 @media only screen and (width >= 900px) {
   html body {
-    max-width: 75rem;
+    max-width: 77rem;
     overflow-x: unset;
     margin: 0 auto;
   }
@@ -335,5 +335,6 @@ body footer {
 
   .article__title {
     font-size: 1.2rem;
+    white-space: nowrap;
   }
 }
