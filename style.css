@@ -128,8 +128,8 @@ li:is(:hover, :focus) {
 .intro__button {
   background-color: var(--soft-red);
   color: var(--off-white);
-  padding: .5rem;
-  width: 7.5rem;
+  padding: .65rem;
+  width: 8.5rem;
 
   font-size: clamp(.8rem, 1vw, 1rem);
   font-variant: small-caps;
